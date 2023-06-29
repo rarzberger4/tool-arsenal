@@ -4,11 +4,11 @@ import shutil
 import subprocess
 
 # Step 1: Define your current version
-current_version = '1.0'
+current_version = 'v0.0'
 
 # Step 2: Get the latest release from GitHub
-repo_owner = 'your_username'
-repo_name = 'your_repository'
+repo_owner = 'rarzberger4'
+repo_name = 'tool-arsenal'
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest'
 response = requests.get(api_url)
 latest_release = response.json()
